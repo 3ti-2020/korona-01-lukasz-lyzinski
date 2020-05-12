@@ -1,3 +1,28 @@
-body {
-color: darkgrey;
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "sidebar main1"
+    "sidebar main2";
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+.item {
+  margin: 2px;
+  background-color: aqua;
+}
+
+.main1 {
+  grid-area: main1;
+}
+.main2 {
+  grid-area: main2;
 }
