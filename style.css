@@ -1,28 +1,157 @@
+* {
+  font-family: "cz";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cz";
+  src: url("straszne.otf") format("opentype");
+}
+
+@keyframes menu_animacja {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes obrazek_animacja {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
-    "sidebar main1"
-    "sidebar main2";
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main";
 }
 h1 {
   display: flex;
   justify-content: center;
 }
 
-.sidebar {
-  grid-area: sidebar;
+.header {
+  grid-area: header;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 .item {
-  margin: 2px;
-  background-color: aqua;
+  margin: 0px;
+  border-style: double;
 }
 
-.main1 {
-  grid-area: main1;
+.main {
+  grid-area: main;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  flex-direction: ;
 }
-.main2 {
-  grid-area: main2;
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+}
+
+.imie {
+  font-size: 100%;
+}
+
+.obrazek1 {
+  height: 220px;
+}
+
+.obrazek2 {
+  height: 100px;
+}
+.obrazek3 {
+  height: 300px;
+  position: relative;
+  bottom: -50px;
+  right: -30px;
+}
+
+.menu {
+  position: relative;
+  right: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.blok {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: white;
+  width: 120px;
+  height: 60px;
+  list-style-type: none;
+  align-self: center;
+  margin: 10px;
+  border-radius: 15px 0px 0px 15px;
+}
+.ty {
+  display: none;
+  position: absolute;
+  top: 0px;
+  width: 65px;
+  height: 60px;
+  background: whitesmoke;
+  left: 120px;
+}
+.text1 {
+  text-decoration: none;
+  color: black;
+}
+
+.text2 {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+}
+
+.text3 {
+  margin: 20px;
+  font-size: 150%;
+}
+
+.blok:hover .ty {
+  display: block;
+  color: black;
+}
+.blok:hover {
+  transform: rotate(-5deg);
+  animation: menu_animacja 2s 1;
+}
+
+.obrazek3:hover {
+  animation: obrazek_animacja 2s 1;
+}
+
+.audio1{
+  position: relative;
+  top: 290px;
+  
 }
