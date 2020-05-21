@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 18 Maj 2020, 16:26
+-- Czas generowania: 21 Maj 2020, 14:23
 -- Wersja serwera: 10.1.37-MariaDB
 -- Wersja PHP: 7.2.12
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Baza danych: `łyziński`
+-- Baza danych: `lyzinski`
 --
 
 -- --------------------------------------------------------
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tabela1` (
-  `Numer` int(11) NOT NULL,
+  `Id` int(11) NOT NULL,
   `Straszne` text NOT NULL,
   `Straszniejsze` text NOT NULL,
   `Najstraszniejsze` text NOT NULL
@@ -39,7 +39,7 @@ CREATE TABLE `tabela1` (
 -- Zrzut danych tabeli `tabela1`
 --
 
-INSERT INTO `tabela1` (`Numer`, `Straszne`, `Straszniejsze`, `Najstraszniejsze`) VALUES
+INSERT INTO `tabela1` (`Id`, `Straszne`, `Straszniejsze`, `Najstraszniejsze`) VALUES
 (1, 'Sasquatch', 'Jaskiniowy potwór', 'Godzilla');
 
 -- --------------------------------------------------------
@@ -49,7 +49,7 @@ INSERT INTO `tabela1` (`Numer`, `Straszne`, `Straszniejsze`, `Najstraszniejsze`)
 --
 
 CREATE TABLE `tabela2` (
-  `Numer` int(11) NOT NULL,
+  `Id` int(11) NOT NULL,
   `Straszne` text NOT NULL,
   `Straszniejsze` text NOT NULL,
   `Najstraszniejsze` text NOT NULL
@@ -59,7 +59,7 @@ CREATE TABLE `tabela2` (
 -- Zrzut danych tabeli `tabela2`
 --
 
-INSERT INTO `tabela2` (`Numer`, `Straszne`, `Straszniejsze`, `Najstraszniejsze`) VALUES
+INSERT INTO `tabela2` (`Id`, `Straszne`, `Straszniejsze`, `Najstraszniejsze`) VALUES
 (1, 'Sasquatch', 'Jaskiniowy potwór', 'Godzilla');
 COMMIT;
 
