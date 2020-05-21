@@ -9,9 +9,11 @@
     <h1 class="imie">Łukasz Łyziński</h1>
     <div class="container">
       <div class="item header">
-        <img class="obrazek2" src="obrazki/emoji.jpg"/>
+        <img class="obrazek2" id="obrazek1" src="obrazki/emoji.png"/>
+        <button class="btn1" value="1">Zacznij</button>
         <img class="obrazek1" src="obrazki/mothman1.jpg"/>
-        <img class="obrazek2" src="obrazki/emoji.jpg"/>
+        <button class="btn2" value="1">Zatrzymaj</button>
+        <img class="obrazek2" id="obrazek2" src="obrazki/emoji.png"/>
       </div>
       <div class="item sidebar">
         <ul class="menu">
@@ -39,10 +41,10 @@
             <a class="text1">Najstraszniejsze</a>
           </li>
           <li class="blok">
-            <a class="text1" href="tabela1/index.html">Tabela1</a>
+            <a class="text1" href="tabela1/index.php">Tabela1</a>
           </li>
           <li class="blok">
-              <a class="text1" href="tabela2/index.html">Tabela2</a>
+              <a class="text1" href="tabela2/index.php">Tabela2</a>
             </li>
           <li class="blok">
               <a class="text1" href="kolejnosc/index.html">Kolejność dodania</a>
@@ -55,6 +57,13 @@
       <div class="item main">
       <o class="text3">Strona poświęcona tajemniczym kreaturom.</a>
       <p><img class="obrazek3" src="obrazki/mystery.jpg" /></p>
+      <div class="kalk">
+      <p>Wpisz nazwę: </p>
+      <input type="text" class="input">
+      <button class="btn3">Losuj</button>
+      <p>Poziom straszności to: <span class="wynik">0</span>/100</p>
+      <img class="monka" src="obrazki/monka.png">
+      </div>
       </div>
     </div>
     <script src="index.js"></script>
